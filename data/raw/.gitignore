@@ -1,0 +1,4 @@
+# Ignore raw downloaded data but keep the directory
+*
+!.gitkeep
+!.gitignore
