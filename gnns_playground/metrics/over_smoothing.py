@@ -199,10 +199,8 @@ def energy_decay_profile(
     list[float]
         Dirichlet energies [E_0, E_1, ..., E_L] where E_0 is the input energy.
     """
-    import scipy.sparse as sp_ 
-
     if isinstance(adj, np.ndarray):
-        adj_sp = sp_.csr_matrix(adj)
+        adj_sp = sp.csr_matrix(adj)
     else:
         adj_sp = adj
 
